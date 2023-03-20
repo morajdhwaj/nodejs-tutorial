@@ -7,7 +7,10 @@ app.get("", (req, res) => {
 });
 
 app.get("/about", (req, res) => {
-  res.send("Hello, this isAbout page");
+  res.send("Hello, this is About page");
+});
+app.get("/help", (req, res) => {
+  res.send("Hello, this is Help page");
 });
 
 app.listen(2000);

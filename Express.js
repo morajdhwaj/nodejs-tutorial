@@ -1,3 +1,8 @@
+module.exports = {
+  a: 20,
+  b: 30,
+};
+
 const express = require("express");
 
 const app = express();

@@ -1,7 +1,10 @@
 const http = require("http");
+const data = require("./data");
+
 http
   .createServer((req, res) => {
-    res.write("<h1> hello this is moraj </h1>");
+    res.writeHead(200, { "content-Type": "application/json" });
+    res.write(JSON.stringify(data));
     res.end();
   })
-  .listen(4500);
+  .listen(5000);
